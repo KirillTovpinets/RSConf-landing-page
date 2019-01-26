@@ -26,8 +26,12 @@ class App extends Component {
     this.setState({
       isOpen: !this.state.isOpen
     });
-  }
+	}
+	getData() {
+		fetch('/data.json').then( data => data.json()).then(data => console.log(data));
+	}
   render() {
+		this.getData();
     return (
 				<Router>
 					<div>
