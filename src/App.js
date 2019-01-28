@@ -19,29 +19,19 @@ class App extends Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-			isOpen: false,
-			photogrs: []
-		};
+      isOpen: false
+    };
   }
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
 	}
-	componentWillMount() {
-		this.getData();
-	}
 	getData() {
-		fetch('/data.json')
-			.then( data => data.json())
-			.then(data => {
-				this.setState({
-					...this.state,
-					photogrs: data
-				})
-			});
+		fetch('/data.json').then( data => data.json()).then(data => this.data = data);
 	}
   render() {
+		this.getData();
     return (
 				<Router>
 					<div>
@@ -61,7 +51,7 @@ class App extends Component {
 						</Navbar>
 						<div className="content">
 							<Container>
-								<Route exact path="/" component={Home}/>
+								<Route exact path="/" component={Home} />
 								<Route path="/photographers" component={Photographers} />
 							</Container>
 						</div>
