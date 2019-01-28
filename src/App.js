@@ -28,7 +28,7 @@ class App extends Component {
     });
 	}
 	getData() {
-		fetch('/data.json').then( data => data.json()).then(data => console.log(data));
+		fetch('/data.json').then( data => data.json()).then(data => this.data = data);
 	}
   render() {
 		this.getData();
