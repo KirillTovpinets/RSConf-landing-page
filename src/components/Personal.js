@@ -112,7 +112,7 @@ export default class Personal extends Component {
 
   render() {
     const { activeIndex } = this.state;
-    const character = this.getCharacter();
+    const character = this.getCharacter();    
     
     // slides
     const slides = character.pictures.map((item) => {
@@ -165,7 +165,7 @@ export default class Personal extends Component {
               <h1 className="person-name">{character.person}</h1>
               <p className="person-quote">{character.quote}</p>
               <p className="person-title">{this.language.work}</p>
-              <a className="card-link" href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">{this.language.linkToWiki}</a>
+              <a className="card-link" href={character.wikiLink}>{this.language.linkToWiki}</a>
             </div>
           </Col>        
           <Col md="4">
@@ -184,7 +184,10 @@ export default class Personal extends Component {
           <Col md="4">
             <div>
               <h6>{this.language.video}</h6>
-              <img style={{ marginTop: '12px', cursor: 'pointer', maxWidth: '50%'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fb.png" alt="video-background" onClick={this.toggle}/>
+              {
+                character.video != "" ? 
+              <img style={{ marginTop: '12px', cursor: 'pointer', maxWidth: '50%'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fb.png" alt="video-background" onClick={this.toggle}/> : <div>Empty :(</div>
+              }
             </div>
             <div style={{ marginTop: '50px' }}>
               <h6>{this.language.geo}</h6>              
@@ -193,19 +196,24 @@ export default class Personal extends Component {
           </Col>
         </Row>
         <Row style={{ marginTop: '60px'}}>
-          <Col md="12">
+          <Col md="6" style={{ margin: '0 auto' }}>
             <h4 style={{ marginBottom: '40px' }}>{this.language.gallery}</h4>
-            <Carousel
-              activeIndex={activeIndex}
-              next={this.next}
-              previous={this.previous}>
-              <CarouselIndicators items={character.pictures} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-              {slides}
-              <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-              <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
-            </Carousel>
-            <div>
-              <h4 style={{ marginTop: '30px' }}>{this.language.biography}</h4>
+            {
+              character.pictures != "" ? 
+                <Carousel
+                  activeIndex={activeIndex}
+                  next={this.next}
+                  previous={this.previous}>
+                  <CarouselIndicators items={character.pictures} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+                  {slides}
+                  <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
+                  <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+                </Carousel> : <div>Empty :(</div>
+            }            
+          </Col>
+          <Col md="6">
+          <div>
+              <h4 style={{ marginBottom: '40px' }}>{this.language.biography}</h4>
               <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
                 {this.language.checkout}
               </Button>
@@ -222,7 +230,7 @@ export default class Personal extends Component {
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>{character.person}</ModalHeader>
           <ModalBody>
-             <iframe style={{margin: '0 auto', width: '100%', height: '400px'}}  src="https://www.youtube.com/embed/-A-1kSc2IXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <iframe style={{margin: '0 auto', width: '100%', height: '400px'}}  src={character.video} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </ModalBody>
         </Modal>
       </div>

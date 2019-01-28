@@ -14,7 +14,7 @@ export default class FirstFace extends Component {
 						</Col>
 						<Col md="8">
 							<h2>{this.props.man.person}</h2>
-							<p className="lead">{this.props.man.about.life.content.slice(0, 300).concat('...')}</p>
+							<p className="lead">{this.props.man.about.life[0].concat('...')}</p>
 							<p className="lead">
 								<NavLink to='/photographers/Tovpinets'>Подробнее</NavLink>
 							</p>

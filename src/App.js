@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
 import Photographers from "./components/Photograpers";
-import Map from './components/Map.js';
 
 import data from "./data";
 

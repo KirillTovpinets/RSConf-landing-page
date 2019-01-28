@@ -17,30 +17,14 @@ export default [
     person: "Уладзімір Сяргеевіч Базан",
     birthday: "21 кастрычніка 1953",
     motherland: "Унеча, Унецкі раён[d], Бранская вобласць, РСФСР, СССР",
-    quote: "У мяне няма каханага колеру, каханай песні, каханай стравы, таму што мне больш падабаецца разнастайнасць і спалучэнне",
+    wikiLink: "https://be.wikipedia.org/wiki/%D0%A3%D0%BB%D0%B0%D0%B4%D0%B7%D1%96%D0%BC%D1%96%D1%80_%D0%A1%D1%8F%D1%80%D0%B3%D0%B5%D0%B5%D0%B2%D1%96%D1%87_%D0%91%D0%B0%D0%B7%D0%B0%D0%BD",
+    quote: "",
     location: {
-      "center": [53.9, 27.56667],
-      "marker": [53.9, 27.56667]
+      "center": [52.836769, 32.677627],
+      "marker": [52.836769, 32.677627]
     },
-    pictures: [
-      {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
-      },
-      {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
-      },
-      {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
-      },
-      {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
-      },
-    ],
-    video: "https://www.youtube.com/watch?v=-A-1kSc2IXc",
+    pictures: [],
+    video: "",
     died: "",
     about: {
       life: 
@@ -94,6 +78,7 @@ export default [
     person: "Міхаіл Уладзіміравіч Анемпадыстаў",
     birthday: "16 сакавіка 1964",
     motherland: "Мінск, БССР, СССР",
+    wikiLink: "https://be.wikipedia.org/wiki/%D0%9C%D1%96%D1%85%D0%B0%D1%96%D0%BB_%D0%A3%D0%BB%D0%B0%D0%B4%D0%B7%D1%96%D0%BC%D1%96%D1%80%D0%B0%D0%B2%D1%96%D1%87_%D0%90%D0%BD%D0%B5%D0%BC%D0%BF%D0%B0%D0%B4%D1%8B%D1%81%D1%82%D0%B0%D1%9E",
     quote: "У мяне няма каханага колеру, каханай песні, каханай стравы, таму што мне больш падабаецца разнастайнасць і спалучэнне",
     location: {
       "center": [53.9, 27.56667],
@@ -105,19 +90,19 @@ export default [
         "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/ed/%D0%9A%D0%BE%D1%81%D0%B0%D1%9E%D1%81%D0%BA%D1%96_%D0%B7%D0%B0%D0%BC%D0%B0%D0%BA.jpg",
+        "caption": "Музей-сядзіба Тадэвуша Касцюшкі ва ўрочышчы Мерачоўшчына каля Косаўскага палаца"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Hrunvald.JPG/800px-Hrunvald.JPG",
+        "caption": "Бела-чырвона-белыя сцягі на святкаванні 600-годдзя Грунвальдскай бітвы на Грунвальдскім полі, фота 2010 г."
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/%D0%92._%D0%90%D0%B7%D1%8F%D1%80%D1%86%D0%BE_-_%D0%9F%D0%B0%D0%BA%D1%80%D0%BE%D1%9E%D1%81%D0%BA%D0%B0%D1%8F_%D1%86%D0%B0%D1%80%D0%BA%D0%B2%D0%B0_PICT1084.jpg/800px-%D0%92._%D0%90%D0%B7%D1%8F%D1%80%D1%86%D0%BE_-_%D0%9F%D0%B0%D0%BA%D1%80%D0%BE%D1%9E%D1%81%D0%BA%D0%B0%D1%8F_%D1%86%D0%B0%D1%80%D0%BA%D0%B2%D0%B0_PICT1084.jpg",
+        "caption": "Пакроўская царква з вёскі Логнавічы — у Беларускім дзяржаўным музеі народнай архітэктуры і побыту"
       },
     ],
-    video: "https://www.youtube.com/watch?v=-A-1kSc2IXc",
+    video: "https://www.youtube.com/embed/-A-1kSc2IXc",
     died: "23 студзеня 2018",
     about: {
       life: 
@@ -173,30 +158,14 @@ export default [
     person: "Ахіла Банольдзі",
     birthday: "1821",
     motherland: "Барселона",
-    quote: "У мяне няма каханага колеру, каханай песні, каханай стравы, таму што мне больш падабаецца разнастайнасць і спалучэнне",
+    wikiLink: "https://be.wikipedia.org/wiki/%D0%90%D1%85%D1%96%D0%BB%D0%B0_%D0%91%D0%B0%D0%BD%D0%BE%D0%BB%D1%8C%D0%B4%D0%B7%D1%96",
+    quote: "",
     location: {
-      "center": [53.9, 27.56667],
-      "marker": [53.9, 27.56667]
+      "center": [41.400921, 2.159396],
+      "marker": [41.400921, 2.159396]
     },
-    pictures: [
-      {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
-      },
-      {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
-      },
-      {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
-      },
-      {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
-      },
-    ],
-    video: "https://www.youtube.com/watch?v=-A-1kSc2IXc",
+    pictures: [],
+    video: "",
     died: "1871",
     about: {
       life: 
@@ -219,30 +188,31 @@ export default [
     status: "normal",
     person: "Міхаіл Рыгоравіч Баразна",
     birthday: "20 лістапада 1962",
-    quote: "У мяне няма каханага колеру, каханай песні, каханай стравы, таму што мне больш падабаецца разнастайнасць і спалучэнне",
+    wikiLink: "https://be.wikipedia.org/wiki/%D0%9C%D1%96%D1%85%D0%B0%D1%96%D0%BB_%D0%A0%D1%8B%D0%B3%D0%BE%D1%80%D0%B0%D0%B2%D1%96%D1%87_%D0%91%D0%B0%D1%80%D0%B0%D0%B7%D0%BD%D0%B0",
+    quote: "",
     location: {
-      "center": [53.9, 27.56667],
-      "marker": [53.9, 27.56667]
+      "center": [54.213727, 29.772781],
+      "marker": [54.213727, 29.772781]
     },
     pictures: [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "http://belprauda.org/wp-content/uploads/2015/10/barazna-8s9rl.jpg",
+        "caption": "Міхаіл Рыгоравіч Баразна"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "http://bdam.by/upload/medialibrary/f20/f20e9c6db6c058ce9988f0e483e918eb.jpg",
+        "caption": "Уручаэнне грамат студэнтам і супрацоўнікам"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "http://ncsm.by/images/uploads/calendar/1044/barazna-m.r.-z-sieryi-staryja-recy.jpg",
+        "caption": "Адна з фатаграфій Міхаіла"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "http://ncsm.by/images/uploads/calendar/1043/barazna-m.r.-z_sieryi-bielarus-drauniova.jpg",
+        "caption": "Адна з фатаграфій Міхаіла"
       },
     ],
-    video: "https://www.youtube.com/watch?v=-A-1kSc2IXc",
+    video: "",
     motherland:
       "Ракушава, Круглянскі сельсавет, Круглянскі раён, Магілёўская вобласць, БССР, СССР",
     died: "",
@@ -296,30 +266,31 @@ export default [
     person: "Барыс Гендэлевіч Берман",
     birthday: "1881",
     motherland: "Іўе",
-    quote: "У мяне няма каханага колеру, каханай песні, каханай стравы, таму што мне больш падабаецца разнастайнасць і спалучэнне",
+    wikiLink: "https://be.wikipedia.org/wiki/%D0%91%D0%B0%D1%80%D1%8B%D1%81_%D0%93%D0%B5%D0%BD%D0%B4%D1%8D%D0%BB%D0%B5%D0%B2%D1%96%D1%87_%D0%91%D0%B5%D1%80%D0%BC%D0%B0%D0%BD",
+    quote: "",
     location: {
       "center": [53.9, 27.56667],
       "marker": [53.9, 27.56667]
     },
     pictures: [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Vialejka%2C_Mienskaja._%D0%92%D1%8F%D0%BB%D0%B5%D0%B9%D0%BA%D0%B0%2C_%D0%9C%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%28B._Berman%2C_1930-39%29.jpg",
+        "caption": "Дом Б.Бермана крайні злева, 1930-ыя гады"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/%D0%91%D1%8B%D0%BB%D1%8B_%D0%B4%D0%BE%D0%BC_%D0%91%D0%B5%D1%80%D0%BA%D1%96_%D0%91%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B0.jpg/1024px-%D0%91%D1%8B%D0%BB%D1%8B_%D0%B4%D0%BE%D0%BC_%D0%91%D0%B5%D1%80%D0%BA%D1%96_%D0%91%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B0.jpg",
+        "caption": "Былы дом Беркі Бермана ў 2016 г"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "http://www.peramoga.by/wp-content/uploads/2016/08/LyebX1FPdac.jpg",
+        "caption": "Барыс Гендэлевіч Берман"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "http://www.peramoga.by/wp-content/uploads/2016/08/Georgieuskaya-ploshcha-pl-Svabodyi-1930-ya-gg.jpg",
+        "caption": "Фатаграфія у газеце"
       },
     ],
-    video: "https://www.youtube.com/watch?v=-A-1kSc2IXc",
+    video: "",
     died: "1940",
     about: {
       life: 
@@ -368,30 +339,31 @@ export default [
     birthday: "6 кастрычніка 1876",
     motherland:
       "Асташын, Навагрудскі павет, Мінская губерня, Расійская імперыя",
-      quote: "У мяне няма каханага колеру, каханай песні, каханай стравы, таму што мне больш падабаецца разнастайнасць і спалучэнне",
+    wikiLink: "https://ru.wikipedia.org/wiki/%D0%91%D1%83%D0%BB%D0%B3%D0%B0%D0%BA,_%D0%AF%D0%BD",
+    quote: "",
     location: {
-      "center": [53.9, 27.56667],
-      "marker": [53.9, 27.56667]
+      "center": [53.693228, 26.023015],
+      "marker": [53.693228, 26.023015]
     },
     pictures: [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://znyata.com/images/stories/line/jan_bulhak/jan-bulhak-25.jpg",
+        "caption": "'Аркі Вільнюса'"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://api.culture.pl/sites/default/files/styles/1920_auto/public/images/imported/fotografia/portrety/Bulhak_Jan/fo_bulhak_jan_portret_en.jpg?itok=foLo0N0B",
+        "caption": "Ян Булгак"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJt_cAUri9C8D9DyowDOD00gAcNY4iiwTQux9-Wl1O6l0uqQ1F",
+        "caption": "Фатаграфія 1920га года"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "http://www.ljplus.ru/img4/p/a/pawet/400.jpg",
+        "caption": "Замак Мір"
       },
     ],
-    video: "https://www.youtube.com/watch?v=-A-1kSc2IXc",
+    video: "",
     died: "4 лютага 1950",
     about: {
       life: 
@@ -435,30 +407,31 @@ export default [
     person: "Павел Канстанцінавіч Валынцэвіч",
     birthday: "1875",
     motherland: "Вялікая Бераставіца, Бераставіцкі раён, Гродзенская вобласць",
-    quote: "У мяне няма каханага колеру, каханай песні, каханай стравы, таму што мне больш падабаецца разнастайнасць і спалучэнне",
+    wikiLink: "https://be.wikipedia.org/wiki/%D0%9F%D0%B0%D0%B2%D0%B5%D0%BB_%D0%9A%D0%B0%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%86%D1%96%D0%BD%D0%B0%D0%B2%D1%96%D1%87_%D0%92%D0%B0%D0%BB%D1%8B%D0%BD%D1%86%D1%8D%D0%B2%D1%96%D1%87",
+    quote: "",
     location: {
-      "center": [53.9, 27.56667],
-      "marker": [53.9, 27.56667]
+      "center": [53.193225, 24.024353],
+      "marker": [53.193225, 24.024353]
     },
     pictures: [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/%D0%9F%D0%B0%D0%B2%D0%B5%D0%BB_%D0%92%D0%B0%D0%BB%D1%8B%D0%BD%D1%86%D1%8D%D0%B2%D1%96%D1%87.jpg/250px-%D0%9F%D0%B0%D0%B2%D0%B5%D0%BB_%D0%92%D0%B0%D0%BB%D1%8B%D0%BD%D1%86%D1%8D%D0%B2%D1%96%D1%87.jpg",
+        "caption": "Павел Канстанцінавіч Валынцэвіч"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Kasuta._%D0%9A%D0%B0%D1%81%D1%83%D1%82%D0%B0_%28P._Va%C5%82yncevi%C4%8D%2C_1900%29.jpg/220px-Kasuta._%D0%9A%D0%B0%D1%81%D1%83%D1%82%D0%B0_%28P._Va%C5%82yncevi%C4%8D%2C_1900%29.jpg",
+        "caption": "Адна з фатаграфій Паўла"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://orthos.org/files/publications/bberestovica/image003.jpg",
+        "caption": "Павел Валынцэвіч і яго сям'я."
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "http://www.hram-miory.vitebsk.by/images/P_V_Shereshovo1.jpg",
+        "caption": "Протаіерэй Павел Валынцэвіч са святарамі "
       },
     ],
-    video: "https://www.youtube.com/watch?v=-A-1kSc2IXc",
+    video: "",
     died: "1962",
     about: {
       life:
@@ -500,30 +473,31 @@ export default [
     status: "normal",
     birthday: "31 студзеня (12 лютага) 1882",
     motherland: "Мінск, Мінскі павет, Мінская губерня, Расійская імперыя",
-    quote: "У мяне няма каханага колеру, каханай песні, каханай стравы, таму што мне больш падабаецца разнастайнасць і спалучэнне",
+    wikiLink: "https://be.wikipedia.org/wiki/%D0%9B%D0%B5%D1%9E_%D0%A3%D1%80%D0%B1%D0%B0%D0%BD%D0%B0%D0%B2%D1%96%D1%87_%D0%94%D0%B0%D1%88%D0%BA%D0%B5%D0%B2%D1%96%D1%87",
+    quote: "",
     location: {
       "center": [53.9, 27.56667],
       "marker": [53.9, 27.56667]
     },
     pictures: [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b1/%D0%A4%D0%B0%D1%82%D0%B0%D0%B3%D1%80%D0%B0%D1%84%D1%96%D1%8F_%D0%9B._%D0%A3._%D0%94%D0%B0%D1%88%D0%BA%D0%B5%D0%B2%D1%96%D1%87.jpg",
+        "caption": "Менск. Від на Верхні Горад. 1920—1930-я гады"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/37/%D0%9D%D0%BE%D1%87%D1%8C_%D1%82%D0%B8%D1%85%D0%B0_%D0%94%D0%B0%D1%88%D0%BA%D0%B5%D0%B2%D1%96%D1%87.jpg",
+        "caption": "Ціхая ноч. 1935 год"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Miensk%2C_Felicyjana%C5%ADskaja-Padhornaja._%D0%9C%D0%B5%D0%BD%D1%81%D0%BA%2C_%D0%A4%D1%8D%D0%BB%D1%96%D1%86%D1%8B%D1%8F%D0%BD%D0%B0%D1%9E%D1%81%D0%BA%D0%B0%D1%8F-%D0%9F%D0%B0%D0%B4%D0%B3%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_%28L._Da%C5%A1kievi%C4%8D%2C_1930%29.jpg/800px-Miensk%2C_Felicyjana%C5%ADskaja-Padhornaja._%D0%9C%D0%B5%D0%BD%D1%81%D0%BA%2C_%D0%A4%D1%8D%D0%BB%D1%96%D1%86%D1%8B%D1%8F%D0%BD%D0%B0%D1%9E%D1%81%D0%BA%D0%B0%D1%8F-%D0%9F%D0%B0%D0%B4%D0%B3%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_%28L._Da%C5%A1kievi%C4%8D%2C_1930%29.jpg",
+        "caption": "Менск. Будаўніцтва жылога дома на 73 кватэры, вугал вуліцы Камсамольскай і Карла Маркса. 1930 год"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Miensk%2C_Lacha%C5%ADka._%D0%9C%D0%B5%D0%BD%D1%81%D0%BA%2C_%D0%9B%D1%8F%D1%85%D0%B0%D1%9E%D0%BA%D0%B0_%28L._Da%C5%A1kievi%C4%8D%2C_1920-29%29.jpg/800px-Miensk%2C_Lacha%C5%ADka._%D0%9C%D0%B5%D0%BD%D1%81%D0%BA%2C_%D0%9B%D1%8F%D1%85%D0%B0%D1%9E%D0%BA%D0%B0_%28L._Da%C5%A1kievi%C4%8D%2C_1920-29%29.jpg",
+        "caption": "Менск. Гарбарны завод «Бальшавік» у Ляхаўцы. 1920—1929 гады"
       },
     ],
-    video: "https://www.youtube.com/watch?v=-A-1kSc2IXc",
+    video: "",
     died: "4 снежня 1957",
     about: {
       life: 
@@ -571,30 +545,31 @@ export default [
     person: "Артур Аляксандравіч Клінаў",
     birthday: "1965",
     motherland: "Мінск, БССР, СССР",
-    quote: "У мяне няма каханага колеру, каханай песні, каханай стравы, таму што мне больш падабаецца разнастайнасць і спалучэнне",
+    wikiLink: "http://www.wikiwand.com/be/%D0%90%D1%80%D1%82%D1%83%D1%80_%D0%90%D0%BB%D1%8F%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%B0%D0%B2%D1%96%D1%87_%D0%9A%D0%BB%D1%96%D0%BD%D0%B0%D1%9E",
+    quote: "Але потым у мяне настала паўза, пайшлі захапленні авангардызмам, пацыфізмам, хіпі… Я на некалькі гадоў пайшоў у экзістэнцыйны пошук",
     location: {
       "center": [53.9, 27.56667],
       "marker": [53.9, 27.56667]
     },
     pictures: [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Minsk_skaryny_ave_02.jpg/1024px-Minsk_skaryny_ave_02.jpg?1548701675105",
+        "caption": "Праспект Незалежнасці ў Мінску. Фота 2005 г."
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Belarus-Minsk-Railway_Station_Square-4.jpg/1024px-Belarus-Minsk-Railway_Station_Square-4.jpg?1548701721564",
+        "caption": "Прывакзальная плошча"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/%D0%9D%D0%B0%D1%86%D1%8B%D1%8F%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B_%D0%B0%D0%BA%D0%B0%D0%B4%D1%8D%D0%BC%D1%96%D1%87%D0%BD%D1%8B_%D0%92%D1%8F%D0%BB%D1%96%D0%BA%D1%96_%D1%82%D1%8D%D0%B0%D1%82%D0%B0%D1%80_%D0%BE%D0%BF%D1%8D%D1%80%D1%8B_%D1%96_%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D1%83_%D0%B3._%D0%9C%D0%B5%D0%BD%D1%81%D0%BA_2.jpg/800px-%D0%9D%D0%B0%D1%86%D1%8B%D1%8F%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B_%D0%B0%D0%BA%D0%B0%D0%B4%D1%8D%D0%BC%D1%96%D1%87%D0%BD%D1%8B_%D0%92%D1%8F%D0%BB%D1%96%D0%BA%D1%96_%D1%82%D1%8D%D0%B0%D1%82%D0%B0%D1%80_%D0%BE%D0%BF%D1%8D%D1%80%D1%8B_%D1%96_%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D1%83_%D0%B3._%D0%9C%D0%B5%D0%BD%D1%81%D0%BA_2.jpg?1548701736404",
+        "caption": "Нацыянальны акадэмічны Вялікі тэатр оперы і балета"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/77/Minsk_in_Winter.jpg?1548701830436",
+        "caption": "Дом пад шпілем"
       },
     ],
-    video: "https://www.youtube.com/watch?v=-A-1kSc2IXc",
+    video: "https://www.youtube.com/embed/79VAo3KnW2Q",
     died: "",
     about: {
       life: 
@@ -644,30 +619,31 @@ export default [
     birthday: "24 ліпеня 1820",
     motherland:
       "Пружаны, Пружанскі павет, Гродзенская губерня, Літоўскае генерал-губернатарства, Расійская імперыя",
-      quote: "У мяне няма каханага колеру, каханай песні, каханай стравы, таму што мне больш падабаецца разнастайнасць і спалучэнне",
+    wikiLink: "https://be.wikipedia.org/wiki/%D0%9B%D1%8E%D1%86%D1%8B%D1%8F%D0%BD_%D0%9A%D1%80%D0%B0%D1%88%D1%8D%D1%9E%D1%81%D0%BA%D1%96",
+    quote: "",
     location: {
-      "center": [53.9, 27.56667],
-      "marker": [53.9, 27.56667]
+      "center": [52.554490, 24.449320],
+      "marker": [52.554490, 24.449320]
     },
     pictures: [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://pruzana.files.wordpress.com/2016/12/356d0bdd0b35d0bad0b0.jpg",
+        "caption": "Люцыян Крашэўскі | Pružana"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://pruzana.files.wordpress.com/2016/12/wa248_39257_ii-80-614_kraszew-monografija_o_01.jpg",
+        "caption": "Метрыка нараджэння з “monografija” Каетана Крашэўскага ад 1861 року"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://pruzana.files.wordpress.com/2016/12/portret-lucjana-kraszewskiego-1860.jpg?w=194&h=300",
+        "caption": "Партрэт фатографа"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Aniempadystau_Michal_2012.jpg/1280px-Aniempadystau_Michal_2012.jpg",
-        "caption": "Міхаіл Уладзіміравіч Анемпадыстаў"
+        "src": "https://pruzana.files.wordpress.com/2016/12/kraszewski203.jpg",
+        "caption": "Lucjan Kraszewski “Rural Customs”, 1850"
       },
     ],
-    video: "https://www.youtube.com/watch?v=-A-1kSc2IXc",
+    video: "",
     died: "2 лютага 1892",
     about: {
       life: 
