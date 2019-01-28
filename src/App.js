@@ -39,17 +39,20 @@ class App extends Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink to="/">Главная</NavLink>
+                  <NavLink className="nav-link" to="/">Главная</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="/photographers/">Фотографы Беларуси</NavLink>
+                  <NavLink className="nav-link" to="/photographers/">Фотографы Беларуси</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
           </Navbar>
           <div className="content">
             <Container>
-              <Route exact path="/" component={Home} />
+              <Route 
+                exact 
+                path="/" 
+                render={props => <Home {...props} data={data.find((el) => el.status === 'vip')} />} />
               <Route
                 path="/photographers"
                 render={props => <Photographers {...props} data={data} />}

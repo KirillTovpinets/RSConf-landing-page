@@ -13,7 +13,7 @@ export default [
   {
     id: "0",
     avatar: img0,
-    status: "normal",
+    status: "vip",
     person: "Уладзімір Сяргеевіч Базан",
     birthday: "21 кастрычніка 1953",
     motherland: "Унеча, Унецкі раён[d], Бранская вобласць, РСФСР, СССР",
@@ -106,7 +106,7 @@ export default [
   {
     id: "2",
     avatar: no_photo,
-    status: "vip",
+    status: "normal",
     person: "Ахіла Банольдзі",
     birthday: "1821",
     motherland: "Барселона",
