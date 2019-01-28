@@ -1,3 +1,40 @@
 .content{
 	padding: 50px 0px;
 }
+
+.personal-avatar {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+.person-name {
+  font-size: 55px;
+}
+
+.person-title {
+  color: #C0C0C0;
+}
+
+.person-quote {
+  max-width: 70%;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.timeline {
+  margin: 0 auto !important;
+}
+
+.timeline--wrapper {
+  padding: 12px 12px 12px 0 !important;
+}
+
+.body-container {
+  padding: 15px !important;
+  font-size: 18px;
+}
+
+.modal-dialog {
+  max-width: 635px !important;
+}
