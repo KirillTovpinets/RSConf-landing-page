@@ -11,7 +11,7 @@ class PhotograperCard extends Component {
   };
 
   render = () => {
-    const { data, route } = this.props;
+    const { data, route, btnLabel } = this.props;
     const url = this.toUrl(data);
 
     return (
@@ -29,7 +29,7 @@ class PhotograperCard extends Component {
             >
               {data.person}
             </CardTitle>
-            <Link to={route.concat(url)}>Подробнее</Link>
+            <Link to={route.concat(url)}>{btnLabel}</Link>
           </CardBody>
         </Card>
       </div>
@@ -38,3 +38,4 @@ class PhotograperCard extends Component {
 }
 
 export default PhotograperCard;
+
