@@ -123,7 +123,8 @@ export default class Personal extends Component {
     this.goToIndex = this.goToIndex.bind(this);
     this.onExiting = this.onExiting.bind(this);
     this.onExited = this.onExited.bind(this);
-    this.language = phrases.by;
+    this.language = this.props.labels;
+    console.log(this.language);
     this.toggle = this.toggle.bind(this);
   }
 
@@ -162,18 +163,6 @@ export default class Personal extends Component {
     const colors = ['#e86971', '#76bb7f', '#61b8ff'];
   
     return { 'background' : `${colors[Math.floor(Math.random ()*3 )]}`, 'color' : '#ffffff' }
-  }
-
-  changeLanguage(language) {
-    if(language === 'english') {
-      this.language = phrases.en;
-    }
-    if(language === 'russian') {
-      this.language = phrases.ru;
-    }
-    if(language === 'belarussian') {
-      this.language = phrases.by;
-    }
   }
 
   render() {
@@ -229,8 +218,8 @@ export default class Personal extends Component {
             <div className="person-first-info">
               <h1 className="person-name">{character.person}</h1>
               <p className="person-quote">{character.quote}</p>
-              <p className="person-title">{this.language.work}</p>
-              <a className="card-link" href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">{this.language.linkToWiki}</a>
+              <p className="person-title">{this.props.labels.work}</p>
+              <a className="card-link" href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">{this.props.labels.linkToWiki}</a>
             </div>
           </Col>        
           <Col md="4">
@@ -239,25 +228,25 @@ export default class Personal extends Component {
         </Row>
         <Row style={{ marginTop: '100px'}}>
           <Col md="8">
-            <h4>{this.language.timeline}</h4>
+            <h4>{this.props.labels.timeline}</h4>
             <Timeline lineColor={'#ddd'}>
               {timeLine}
             </Timeline>
           </Col> 
           <Col md="4">
             <div>
-              <h6>{this.language.video}</h6>
+              <h6>{this.props.labels.video}</h6>
               <img style={{ marginTop: '12px', cursor: 'pointer', maxWidth: '100%'}} src={character.imageSrc} alt="video-background" onClick={this.toggle}/>
             </div>
             <div style={{ marginTop: '50px' }}>
-              <h6>{this.language.geo}</h6>
+              <h6>{this.props.labels.geo}</h6>
               <div id="map"></div>
             </div>
           </Col>
         </Row>
         <Row style={{ marginTop: '60px'}}>
           <Col md="12">
-            <h4 style={{ marginBottom: '40px' }}>{this.language.gallery}</h4>
+            <h4 style={{ marginBottom: '40px' }}>{this.props.labels.gallery}</h4>
             <Carousel
               activeIndex={activeIndex}
               next={this.next}
@@ -268,9 +257,9 @@ export default class Personal extends Component {
               <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
             </Carousel>
             <div>
-              <h4 style={{ marginTop: '30px' }}>{this.language.biography}</h4>
+              <h4 style={{ marginTop: '30px' }}>{this.props.labels.biography}</h4>
               <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
-                {this.language.checkout}
+                {this.props.labels.checkout}
               </Button>
               <UncontrolledCollapse toggler="#toggler">
                 <Card>
