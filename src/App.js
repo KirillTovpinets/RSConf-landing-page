@@ -1,8 +1,11 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import './App.css';
-import Home from './components/Home';
-import Photographers from './components/Photograpers';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import "./App.css";
+import Home from "./components/Home";
+import Photographers from "./components/Photograpers";
+
+import data from "./data";
+
 import {
   Collapse,
   Navbar,
@@ -10,55 +13,53 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  Container } from 'reactstrap';
+  Container
+} from "reactstrap";
 
 class App extends Component {
-	constructor(props) {
-    super(props);
+  state = {
+    isOpen: false
+  };
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
+  toggle = () => {
     this.setState({
       isOpen: !this.state.isOpen
     });
-	}
-	getData() {
-		fetch('/data.json').then( data => data.json()).then(data => this.data = data);
-	}
-  render() {
-		this.getData();
+  };
+
+  render = () => {
     return (
-				<Router>
-					<div>
-						<Navbar color="light" light expand="md">
-							<NavbarBrand href="/">RSSchool</NavbarBrand>
-							<NavbarToggler onClick={this.toggle} />
-							<Collapse isOpen={this.state.isOpen} navbar>
-								<Nav className="ml-auto" navbar>
-									<NavItem>
-										<NavLink href="/">Главная</NavLink>
-									</NavItem>
-									<NavItem>
-										<NavLink href="/photographers/">Фотографы Беларуси</NavLink>
-									</NavItem>
-								</Nav>
-							</Collapse>
-						</Navbar>
-						<div className="content">
-							<Container>
-								<Route exact path="/" component={Home} />
-								<Route path="/photographers" component={Photographers} />
-							</Container>
-						</div>
-					</div>
-				</Router>
+      <Router>
+        <div>
+          <Navbar color="light" light expand="md">
+            <NavbarBrand>
+              <NavLink to="/">RSSchool</NavLink>
+            </NavbarBrand>
+            <NavbarToggler onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar>
+              <Nav className="ml-auto" navbar>
+                <NavItem>
+                  <NavLink to="/">Главная</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to="/photographers/">Фотографы Беларуси</NavLink>
+                </NavItem>
+              </Nav>
+            </Collapse>
+          </Navbar>
+          <div className="content">
+            <Container>
+              <Route exact path="/" component={Home} />
+              <Route
+                path="/photographers"
+                render={props => <Photographers {...props} data={data} />}
+              />
+            </Container>
+          </div>
+        </div>
+      </Router>
     );
-  }
+  };
 }
 
 export default App;

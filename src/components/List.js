@@ -1,18 +1,18 @@
-import React, { Component } from 'react'
-import PhotographerCard from './PhotograperCard';
-import { Row, Col } from 'reactstrap';
+import React, { Component } from "react";
+import PhotographerCard from "./PhotograperCard";
+import { Row, Col } from "reactstrap";
 
 export default class List extends Component {
-	render() {
-		return (
-			<Row>
-				<Col md="3">
-					<PhotographerCard route={this.props.match.url}/>
-				</Col>
-				<Col md="3">
-					<PhotographerCard route={this.props.match.url}/>
-				</Col>
-			</Row>
-		)
-	}
+  render = () => {
+    const { data, match } = this.props;
+    return (
+      <Row>
+        {data.map(photographer => (
+          <Col md="3" key={photographer.id}>
+            <PhotographerCard route={match.url} data={photographer} />
+          </Col>
+        ))}
+      </Row>
+    );
+  };
 }

@@ -1,21 +1,40 @@
-import React from 'react';
-import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, CardLink } from 'reactstrap';
+import React, { Component } from "react";
+import { Card, CardImg, CardBody, CardTitle } from "reactstrap";
+import { Link } from "react-router-dom";
 
-const PhotograperCard = ({route}) => {
-  return (
-    <div>
-      <Card>
-        <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-        <CardBody>
-          <CardTitle>Card title</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          <CardLink href={route.concat('Tovpinets')}>Подробнее</CardLink>
-        </CardBody>
-      </Card>
-    </div>
-  );
-};
+class PhotograperCard extends Component {
+  toUrl = name => {
+    return name.person
+      .split(" ")
+      .map(name => name.toLowerCase())
+      .join("-");
+  };
+
+  render = () => {
+    const { data, route } = this.props;
+    const url = this.toUrl(data);
+
+    return (
+      <div>
+        <Card
+          style={{
+            height: "25rem",
+            marginBottom: "3rem"
+          }}
+        >
+          <CardImg top style={{ height: "60%" }} src={data.avatar} />
+          <CardBody style={{ height: "40%" }}>
+            <CardTitle
+              style={{ fontSize: "18px", fontWeight: "bold", height: "70%" }}
+            >
+              {data.person}
+            </CardTitle>
+            <Link to={route.concat(url)}>Подробнее</Link>
+          </CardBody>
+        </Card>
+      </div>
+    );
+  };
+}
 
 export default PhotograperCard;
