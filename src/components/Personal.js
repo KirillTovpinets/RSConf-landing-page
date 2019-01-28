@@ -50,7 +50,7 @@ export default class Personal extends Component {
     this.goToIndex = this.goToIndex.bind(this);
     this.onExiting = this.onExiting.bind(this);
     this.onExited = this.onExited.bind(this);
-    this.language = phrases.by;
+    this.language = this.props.labels;
     this.toggle = this.toggle.bind(this);
   }
 
@@ -89,18 +89,6 @@ export default class Personal extends Component {
     const colors = ['#e86971', '#76bb7f', '#61b8ff'];
   
     return { 'background' : `${colors[Math.floor(Math.random ()*3 )]}`, 'color' : '#ffffff' }
-  }
-
-  changeLanguage(language) {
-    if(language === 'english') {
-      this.language = phrases.en;
-    }
-    if(language === 'russian') {
-      this.language = phrases.ru;
-    }
-    if(language === 'belarussian') {
-      this.language = phrases.by;
-    }
   }
 
   getCharacter = () => {
@@ -164,8 +152,8 @@ export default class Personal extends Component {
             <div className="person-first-info">
               <h1 className="person-name">{character.person}</h1>
               <p className="person-quote">{character.quote}</p>
-              <p className="person-title">{this.language.work}</p>
-              <a className="card-link" href={character.wikiLink}>{this.language.linkToWiki}</a>
+              <p className="person-title">{this.props.labels.work}</p>
+              <a className="card-link" href={character.wikiLink}>{this.props.labels.linkToWiki}</a>
             </div>
           </Col>        
           <Col md="4">
@@ -174,7 +162,7 @@ export default class Personal extends Component {
         </Row>
         <Row style={{ marginTop: '100px'}}>
           <Col md="8">
-            <h4>{this.language.timeline}</h4>
+            <h4>{this.props.labels.timeline}</h4>
             {timeLine != "" ? 
             <Timeline lineColor={'#ddd'}>
               {timeLine}
@@ -183,21 +171,21 @@ export default class Personal extends Component {
           </Col> 
           <Col md="4">
             <div>
-              <h6>{this.language.video}</h6>
+              <h6>{this.props.labels.video}</h6>
               {
                 character.video != "" ? 
               <img style={{ marginTop: '12px', cursor: 'pointer', maxWidth: '50%'}} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4fb.png" alt="video-background" onClick={this.toggle}/> : <div>Empty :(</div>
               }
             </div>
             <div style={{ marginTop: '50px' }}>
-              <h6>{this.language.geo}</h6>              
+              <h6>{this.props.labels.geo}</h6>              
               <Map location={character.location.center} marker={character.location.marker}/>
             </div>
           </Col>
         </Row>
         <Row style={{ marginTop: '60px'}}>
           <Col md="6" style={{ margin: '0 auto' }}>
-            <h4 style={{ marginBottom: '40px' }}>{this.language.gallery}</h4>
+            <h4 style={{ marginBottom: '40px' }}>{this.props.labels.gallery}</h4>
             {
               character.pictures != "" ? 
                 <Carousel
@@ -213,9 +201,9 @@ export default class Personal extends Component {
           </Col>
           <Col md="6">
           <div>
-              <h4 style={{ marginBottom: '40px' }}>{this.language.biography}</h4>
+              <h4 style={{ marginBottom: '40px' }}>{this.props.labels.biography}</h4>
               <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
-                {this.language.checkout}
+                {this.props.labels.checkout}
               </Button>
               <UncontrolledCollapse toggler="#toggler">
                 <Card>
