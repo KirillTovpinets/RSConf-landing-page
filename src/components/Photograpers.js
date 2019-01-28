@@ -12,19 +12,19 @@ class Photographers extends Component {
   };
 
   render = () => {
-    const { data, match } = this.props;
+    const { data, match, labels } = this.props;
 
     return (
       <Fragment>
         <Route
           exact
           path={match.path}
-          render={props => <List {...props} data={data} />}
+          render={props => <List {...props} data={data} buttonLabel={labels.buttons} />}
         />
         <Route
           path={match.path.concat("/:id")}
           render={props => (
-            <Personal {...props} data={data} toName={this.toName} />
+            <Personal {...props} data={data} labels={labels} toName={this.toName} />
           )}
         />
       </Fragment>
@@ -33,3 +33,4 @@ class Photographers extends Component {
 }
 
 export default Photographers;
+
