@@ -4,3 +4,21 @@
 [class^="col-"] img{
 	width: 100%;
 }
+
+.person-name {
+  font-size: 55px;
+}
+
+.person-quote {
+  font-style: italic;
+  font-size: 20px;
+  max-width: 80%;
+}
+
+.person-title {
+  color: #dddddd  ;
+}
+
+.modal-dialog {
+  max-width: 650px !important;
+}
