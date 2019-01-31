@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, CardImg, CardBody, CardTitle } from "reactstrap";
+import { Card, CardImg, CardBody, CardTitle, CardText } from "reactstrap";
 import { Link } from "react-router-dom";
 
 class PhotograperCard extends Component {
@@ -11,7 +11,7 @@ class PhotograperCard extends Component {
   };
 
   render = () => {
-    const { data, route, btnLabel } = this.props;
+    const { data, route } = this.props;
     const url = this.toUrl(data);
 
     return (
@@ -19,17 +19,23 @@ class PhotograperCard extends Component {
         <Card
           style={{
             height: "25rem",
-            marginBottom: "3rem"
+            width: "230px",
+            marginBottom: "3rem",
+            position: "relative"
           }}
         >
           <CardImg top style={{ height: "60%" }} src={data.avatar} />
-          <CardBody style={{ height: "40%" }}>
-            <CardTitle
-              style={{ fontSize: "18px", fontWeight: "bold", height: "70%" }}
-            >
+          <CardBody>
+            <CardTitle style={{ fontSize: "14px", fontWeight: "bold" }}>
               {data.person}
             </CardTitle>
-            <Link to={route.concat(url)}>{btnLabel}</Link>
+            <CardText style={{ fontSize: "12px" }}>{data.motherland}</CardText>
+            <Link
+              to={route.concat(url)}
+              style={{ position: "absolute", bottom: "10px" }}
+            >
+              Подробнее
+            </Link>
           </CardBody>
         </Card>
       </div>
@@ -38,4 +44,3 @@ class PhotograperCard extends Component {
 }
 
 export default PhotograperCard;
-
